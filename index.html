@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proof | Restaurant Consulting & Marketing</title>
+<meta name="description" content="Operator-led restaurant consulting for coffee shops, cafes and quick-service restaurants. Launch smarter, improve operations and grow.">
+<style>
+:root{--dark:#152b24;--green:#345d49;--lime:#dbed9c;--cream:#f8f8f3;--soft:#edf2e8;--muted:#59695f;--border:#dce4d8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{margin:0;background:var(--cream);color:var(--dark);font-family:Arial,Helvetica,sans-serif;line-height:1.7}
+a{text-decoration:none;color:inherit}
+h1,h2,h3{line-height:1.17;font-weight:800;margin:0 0 20px}
+h1{font-size:clamp(2.6rem,5vw,4.6rem)}
+h2{font-size:clamp(2rem,3vw,3rem)}
+h3{font-size:21px}
+p{color:var(--muted);margin:0 0 18px}
+.container{width:100%;max-width:1140px;margin:auto;padding:0 20px}
+.row{display:flex;flex-wrap:wrap;margin:0 -12px;row-gap:24px}
+.row>*{padding:0 12px;width:100%}
+.col-12{width:100%}
+@media(min-width:768px){.col-md-4{width:33.333%}.col-md-6{width:50%}}
+@media(min-width:992px){.col-lg-4{width:33.333%}.col-lg-5{width:41.666%}.col-lg-6{width:50%}.col-lg-7{width:58.333%}.col-lg-8{width:66.666%}}
+section{padding:80px 0}
+.kicker{font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--green);margin-bottom:13px}
+.text-green{color:var(--green)}
+.bg-soft{background:var(--soft)}
+.bg-white{background:white}
+.bg-dark{background:var(--dark);color:white}
+.bg-dark p{color:#d2dfd4}
+.btn{display:inline-block;border:2px solid transparent;border-radius:8px;padding:12px 22px;font-size:15px;font-weight:700;line-height:1.5;text-align:center;cursor:pointer;transition:.2s}
+.btn-proof,.btn-proof:visited{background:var(--dark);border-color:var(--dark);color:#fff!important}
+.btn-proof:hover,.btn-proof:focus{background:var(--green);border-color:var(--green);color:#fff!important}
+.btn-outline,.btn-outline:visited{background:transparent;border-color:var(--dark);color:var(--dark)!important}
+.btn-outline:hover,.btn-outline:focus{background:var(--dark);color:#fff!important}
+.btn-lime{background:var(--lime);color:var(--dark)!important;border-color:var(--lime)}
+.navbar{background:var(--cream);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.nav-inner{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.navbar-brand{font-weight:900;font-size:30px;letter-spacing:-1px}
+.logo-dot{color:#8cae60}
+.nav-links{display:flex;align-items:center;gap:24px}
+.nav-links a:not(.btn){font-size:14px;font-weight:700}
+.nav-links a:not(.btn):hover{color:var(--green)}
+.nav-links .btn{padding:9px 18px;font-size:14px}
+.nav-toggle{display:none;background:none;border:1px solid var(--green);border-radius:7px;font-size:25px;padding:3px 12px;color:var(--dark);cursor:pointer}
+.hero{padding:105px 0}
+.hero .row,.align-center{align-items:center}
+.lead{font-size:19px;max-width:610px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:27px 0 12px}
+.hero-panel{background:linear-gradient(135deg,#152b24,#416a52);min-height:390px;border-radius:20px;padding:44px;display:flex;flex-direction:column;justify-content:center}
+.hero-panel h2{color:white}
+.hero-panel p{color:#d7e5d9}
+.tag{display:inline-block;border:1px solid #99b7a2;color:white;border-radius:30px;padding:5px 13px;margin:4px;font-size:12px}
+.trust{background:white;border-block:1px solid var(--border);padding:22px 0;text-align:center;font-weight:700}
+.section-heading{max-width:760px;margin-bottom:42px}
+.card{height:100%;background:white;border:1px solid var(--border);border-radius:15px;padding:30px}
+.num{display:inline-flex;width:48px;height:48px;align-items:center;justify-content:center;background:var(--soft);border-radius:9px;font-weight:900;margin-bottom:20px}
+.check{padding:11px 0;border-bottom:1px solid var(--border)}
+.check:before{content:"✓";font-weight:900;color:var(--green);margin-right:12px}
+.dark-card{background:#2b4939;border-radius:14px;padding:30px;height:100%}
+.dark-card h3{color:white}
+.dark-card p{color:#d2dfd4}
+.form-box{background:white;border:1px solid var(--border);border-radius:16px;padding:35px}
+.form-label{display:block;font-size:14px;font-weight:700;margin-bottom:6px}
+.form-control{width:100%;border:1px solid #cbd8c9;padding:12px;border-radius:7px;font:inherit;margin-bottom:18px;background:white;color:var(--dark)}
+.form-control:focus{outline:2px solid #a9c5ad;outline-offset:1px}
+.w-100{width:100%}
+.small{font-size:13px}
+.cta{background:var(--lime);border-radius:18px;padding:55px;text-align:center}
+.cta p{color:var(--green)}
+footer{background:#10231b;padding:45px 0 25px;color:white}
+footer p,footer a:not(.navbar-brand){color:#bdcbbd}
+.footer-inner{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.footer-links{display:flex;gap:18px;flex-wrap:wrap}
+footer hr{border:0;border-top:1px solid #48604f;margin:30px 0 15px}
+.text-center{text-align:center}
+.mt-4{margin-top:24px}
+.mb-0{margin-bottom:0}
+@media(max-width:767px){
+section{padding:60px 0}
+.hero{padding:65px 0}
+.nav-inner{flex-wrap:wrap}
+.nav-toggle{display:block}
+.nav-links{display:none;flex-direction:column;align-items:stretch;width:100%;gap:0;padding-bottom:15px}
+.nav-links.open{display:flex}
+.nav-links a{padding:10px 0}
+.nav-links .btn{margin-top:8px}
+.hero-actions{flex-direction:column}
+.hero-actions .btn{width:100%}
+.hero-panel{min-height:300px;padding:30px}
+.form-box,.card{padding:24px}
+.cta{padding:32px 22px}
+}
+</style>
+</head>
+<body>
+
+<header class="navbar">
+<div class="container nav-inner">
+<a class="navbar-brand" href="index.html">proof<span class="logo-dot">.</span></a>
+<button class="nav-toggle" aria-label="Toggle navigation" aria-controls="nav" aria-expanded="false">☰</button>
+<nav class="nav-links" id="nav">
+<a href="index.html">Home</a>
+<a href="#services">Services</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a class="btn btn-proof" href="contact.html#booking">Book a Call</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="row">
+<div class="col-lg-7">
+<div class="kicker">Restaurant Consulting by Real Operators</div>
+<h1>Build smarter. <span class="text-green">Operate better.</span> Grow stronger.</h1>
+<p class="lead">Practical restaurant consulting for independent coffee shops, cafés and quick-service restaurants. From your first location to your next stage of growth, we help you make better decisions without wasting money.</p>
+<div class="hero-actions">
+<a href="#playbook" class="btn btn-proof">Get the Free Playbook</a>
+<a href="contact.html#booking" class="btn btn-outline">Book a Call</a>
+</div>
+<p class="small">Real restaurant experience. Practical strategies. Straightforward advice.</p>
+</div>
+<div class="col-lg-5">
+<div class="hero-panel">
+<p class="small">THE PROOF DIFFERENCE</p>
+<h2>We do this work every day.</h2>
+<p>We're active restaurant operators who understand that every decision affects your costs, customers and bottom line.</p>
+<div>
+<span class="tag">Startups</span><span class="tag">Operations</span><span class="tag">Profitability</span><span class="tag">Marketing</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="trust">
+<div class="container">
+<div class="row">
+<div class="col-md-4">Operator-Led Advice</div>
+<div class="col-md-4">Cost-Conscious Planning</div>
+<div class="col-md-4">Hands-On Support</div>
+</div>
+</div>
+</div>
+
+<section>
+<div class="container">
+<div class="section-heading">
+<div class="kicker">Who We Help</div>
+<h2>Support at every stage of your restaurant.</h2>
+<p>Whether you're starting with an idea or working to improve an existing business, we can help you create a clearer path forward.</p>
+</div>
+<div class="row">
+<div class="col-md-4"><div class="card">
+<div class="num">01</div>
+<h3>Opening a Restaurant</h3>
+<p>Turn your concept into a practical plan. Make smarter decisions about location, equipment, buildout, menu and budget.</p>
+</div></div>
+<div class="col-md-4"><div class="card">
+<div class="num">02</div>
+<h3>Fixing What's Not Working</h3>
+<p>Identify problems in your costs, staffing, systems, pricing, sales and operations before they become more expensive.</p>
+</div></div>
+<div class="col-md-4"><div class="card">
+<div class="num">03</div>
+<h3>Growing Your Business</h3>
+<p>Build stronger systems, reach more customers, improve profitability and prepare for your next stage of growth.</p>
+</div></div>
+</div>
+</div>
+</section>
+
+<section id="services" class="bg-white">
+<div class="container">
+<div class="section-heading">
+<div class="kicker">Our Services</div>
+<h2>Everything works better with a game plan.</h2>
+<p>We look at your restaurant as a complete business, not a collection of disconnected problems.</p>
+</div>
+<div class="row">
+<div class="col-md-6 col-lg-4"><div class="card"><h3>Concept & Location</h3><p>Business concepts, market positioning, location evaluation, demand research and launch strategy.</p></div></div>
+<div class="col-md-6 col-lg-4"><div class="card"><h3>Buildout & Equipment</h3><p>Equipment selection, practical layouts, workflows, startup budgets and cost-conscious purchasing.</p></div></div>
+<div class="col-md-6 col-lg-4"><div class="card"><h3>Menu Development</h3><p>Menu planning, product costing, pricing, margin analysis and menu engineering.</p></div></div>
+<div class="col-md-6 col-lg-4"><div class="card"><h3>Staffing & Operations</h3><p>Hiring plans, training, labor scheduling, systems, service procedures and daily operations.</p></div></div>
+<div class="col-md-6 col-lg-4"><div class="card"><h3>Cost Control</h3><p>Food cost, purchasing, inventory, waste, labor expenses and profitability improvements.</p></div></div>
+<div class="col-md-6 col-lg-4"><div class="card"><h3>SEO & Marketing</h3><p>Google Maps, Google Business Profile, local SEO, websites, social media and customer acquisition.</p></div></div>
+</div>
+<div class="text-center mt-4">
+<a href="contact.html" class="btn btn-proof">Discuss Your Business</a>
+</div>
+</div>
+</section>
+
+<section class="bg-soft">
+<div class="container">
+<div class="row align-center">
+<div class="col-lg-6">
+<div class="kicker">Why Proof</div>
+<h2>We're operators first. Consultants second.</h2>
+<p>We understand the realities of managing people, watching expenses, serving customers and making tough decisions because we're actively involved in operating restaurants ourselves.</p>
+<p>Our goal is to help small operators spend intelligently, avoid unnecessary complexity and build businesses they can manage confidently.</p>
+<a href="about.html" class="btn btn-proof">More About Us</a>
+</div>
+<div class="col-lg-6">
+<div class="card">
+<h3>What We Believe</h3>
+<div class="check">A smaller budget deserves a smarter plan</div>
+<div class="check">Good systems should make daily work easier</div>
+<div class="check">Pricing should be based on real costs</div>
+<div class="check">Marketing should generate actual customers</div>
+<div class="check">Strategies should improve based on results</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="section-heading">
+<div class="kicker">How It Works</div>
+<h2>From the plan to the actual work.</h2>
+</div>
+<div class="row">
+<div class="col-md-4"><div class="card"><div class="num">1</div><h3>Understand</h3><p>We review your business, challenges, budget, goals and priorities.</p></div></div>
+<div class="col-md-4"><div class="card"><div class="num">2</div><h3>Build the Strategy</h3><p>We develop a practical plan focused on what matters most.</p></div></div>
+<div class="col-md-4"><div class="card"><div class="num">3</div><h3>Implement & Improve</h3><p>We help put the plan into action, evaluate results and make adjustments.</p></div></div>
+</div>
+</div>
+</section>
+
+<section class="bg-dark">
+<div class="container">
+<div class="section-heading">
+<div class="kicker" style="color:var(--lime)">Actual Restaurant Experience</div>
+<h2>The work behind our advice.</h2>
+<p>We believe our experience should speak for itself. This space is reserved for authentic examples of restaurants we've operated and challenges we've solved.</p>
+</div>
+<div class="row">
+<div class="col-md-6"><div class="dark-card"><h3>Our Restaurants</h3><p>Add the names, locations and actual photographs of restaurants you own and operate.</p></div></div>
+<div class="col-md-6"><div class="dark-card"><h3>Our Results</h3><p>Add a real operational improvement, marketing result or lesson learned firsthand.</p></div></div>
+</div>
+</div>
+</section>
+
+<section id="playbook" class="bg-soft">
+<div class="container">
+<div class="row align-center">
+<div class="col-lg-6">
+<div class="kicker">Free Restaurant Resource</div>
+<h2>The Restaurant Playbook.</h2>
+<p>Practical guidance for people preparing to open, improve or grow an independent restaurant.</p>
+<div class="check">Avoid common startup mistakes</div>
+<div class="check">Plan equipment and buildout costs</div>
+<div class="check">Understand menu pricing and margins</div>
+<div class="check">Improve daily restaurant operations</div>
+<div class="check">Get found through Google Maps</div>
+</div>
+<div class="col-lg-6">
+<div class="form-box">
+<h3>Get the Free Playbook</h3>
+<p>Signup coming soon.</p>
+<form id="playbookForm">
+<label for="name" class="form-label">Your Name</label>
+<input class="form-control" id="name" name="name" autocomplete="name" required>
+<label for="email" class="form-label">Email Address</label>
+<input class="form-control" id="email" type="email" name="email" autocomplete="email" required>
+<label for="phone" class="form-label">Phone Number</label>
+<input class="form-control" id="phone" type="tel" name="phone" autocomplete="tel" required>
+<label class="small" style="display:block;margin-bottom:20px"><input type="checkbox"> I'd like optional restaurant tips and updates when available.</label>
+<button class="btn btn-proof w-100" type="submit">Get the Free Playbook</button>
+<p id="formMessage" class="small mt-4" role="status">This form is not yet accepting submissions.</p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="cta">
+<div class="kicker">Let's Build Something Better</div>
+<h2>Your restaurant deserves a clear plan.</h2>
+<p>Whether you're preparing to open, facing operational challenges or ready to grow, let's discuss your next move.</p>
+<a href="contact.html#booking" class="btn btn-proof">Book a Call</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<div class="footer-inner">
+<div><a href="index.html" class="navbar-brand">proof<span class="logo-dot">.</span></a><p>Restaurant consulting from real operators.</p></div>
+<div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></div>
+</div>
+<hr>
+<p class="small mb-0">&copy; <span class="year"></span> Proof. All rights reserved.</p>
+</div>
+</footer>
+
+<script>
+document.querySelector(".nav-toggle").addEventListener("click",function(){
+const nav=document.getElementById("nav");
+const open=nav.classList.toggle("open");
+this.setAttribute("aria-expanded",String(open));
+});
+document.querySelectorAll(".year").forEach(e=>e.textContent=new Date().getFullYear());
+document.getElementById("playbookForm").addEventListener("submit",function(e){
+e.preventDefault();
+document.getElementById("formMessage").textContent="Signup is not active yet. No information has been sent or saved.";
+});
+</script>
+</body>
+</html>

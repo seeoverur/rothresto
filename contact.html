@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Proof | Restaurant Consulting</title>
+<meta name="description" content="Contact Proof about restaurant startup planning, operations, menu pricing, SEO and marketing consulting.">
+<style>
+:root{--dark:#152b24;--green:#345d49;--lime:#dbed9c;--cream:#f8f8f3;--soft:#edf2e8;--muted:#59695f;--border:#dce4d8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{margin:0;background:var(--cream);color:var(--dark);font-family:Arial,Helvetica,sans-serif;line-height:1.7}
+a{text-decoration:none;color:inherit}
+h1,h2,h3{font-weight:800;line-height:1.17;margin:0 0 20px}
+h1{font-size:clamp(2.6rem,5vw,4.6rem)}
+h2{font-size:clamp(2rem,3vw,3rem)}
+h3{font-size:21px}
+p{color:var(--muted);margin:0 0 18px}
+.container{max-width:1140px;margin:auto;padding:0 20px}
+.row{display:flex;flex-wrap:wrap;margin:0 -12px;row-gap:24px}
+.row>*{width:100%;padding:0 12px}
+@media(min-width:768px){.col-md-6{width:50%}}
+@media(min-width:992px){.col-lg-5{width:41.666%}.col-lg-7{width:58.333%}}
+section{padding:80px 0}
+.kicker{font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--green);margin-bottom:13px}
+.bg-soft{background:var(--soft)}
+.btn{display:inline-block;border:2px solid transparent;border-radius:8px;padding:12px 22px;font-size:15px;font-weight:700;text-align:center;cursor:pointer}
+.btn-proof,.btn-proof:visited{background:var(--dark);border-color:var(--dark);color:white!important}
+.btn-proof:hover,.btn-proof:focus{background:var(--green);border-color:var(--green);color:white!important}
+.btn-outline,.btn-outline:visited{background:transparent;border-color:var(--dark);color:var(--dark)!important}
+.btn-outline:hover,.btn-outline:focus{background:var(--dark);color:white!important}
+button:disabled{opacity:.65;cursor:not-allowed}
+.navbar{background:var(--cream);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.nav-inner{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.navbar-brand{font-weight:900;font-size:30px;letter-spacing:-1px}
+.logo-dot{color:#8cae60}
+.nav-links{display:flex;align-items:center;gap:24px}
+.nav-links a:not(.btn){font-size:14px;font-weight:700}
+.nav-links .btn{font-size:14px;padding:9px 18px}
+.nav-toggle{display:none;background:none;border:1px solid var(--green);border-radius:7px;font-size:25px;padding:3px 12px;color:var(--dark);cursor:pointer}
+.page-hero{background:var(--soft);padding:90px 0 75px}
+.page-hero p{max-width:760px;font-size:19px}
+.form-box,.card{background:white;border:1px solid var(--border);border-radius:15px;padding:35px}
+.form-label{display:block;font-size:14px;font-weight:700;margin-bottom:7px}
+.form-control,.form-select{width:100%;border:1px solid #cbd8c9;border-radius:7px;padding:12px;font:inherit;color:var(--dark);background:white;margin-bottom:18px}
+.form-control:focus,.form-select:focus{outline:2px solid #a9c5ad}
+textarea.form-control{resize:vertical}
+.check{padding:11px 0;border-bottom:1px solid var(--border)}
+.check:before{content:"✓";font-weight:900;color:var(--green);margin-right:12px}
+.notice{padding:16px 20px;border-radius:8px;background:var(--soft);font-size:14px;color:var(--green);margin-top:24px}
+.cta{background:var(--lime);border-radius:18px;padding:55px;text-align:center}
+.cta p{color:var(--green)}
+.align-center{align-items:center}
+.w-100{width:100%}
+.small{font-size:13px}
+.text-center{text-align:center}
+footer{background:#10231b;padding:45px 0 25px;color:white}
+footer p,footer a:not(.navbar-brand){color:#bdcbbd}
+.footer-inner{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.footer-links{display:flex;gap:18px;flex-wrap:wrap}
+footer hr{border:0;border-top:1px solid #48604f;margin:30px 0 15px}
+@media(max-width:767px){
+section{padding:60px 0}
+.page-hero{padding:65px 0}
+.nav-inner{flex-wrap:wrap}
+.nav-toggle{display:block}
+.nav-links{display:none;flex-direction:column;align-items:stretch;width:100%;gap:0;padding-bottom:15px}
+.nav-links.open{display:flex}
+.nav-links a{padding:10px 0}
+.nav-links .btn{margin-top:8px}
+.form-box,.card{padding:24px}
+.cta{padding:32px 22px}
+}
+</style>
+</head>
+<body>
+
+<header class="navbar">
+<div class="container nav-inner">
+<a class="navbar-brand" href="index.html">proof<span class="logo-dot">.</span></a>
+<button class="nav-toggle" aria-label="Toggle navigation" aria-controls="nav" aria-expanded="false">☰</button>
+<nav class="nav-links" id="nav">
+<a href="index.html">Home</a>
+<a href="index.html#services">Services</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a class="btn btn-proof" href="#booking">Book a Call</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="page-hero">
+<div class="container">
+<div class="kicker">Contact Proof</div>
+<h1>Let's talk about your restaurant.</h1>
+<p>Whether you're planning your first coffee shop, working to improve an existing location or preparing for growth, we'd like to hear what you're working on.</p>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="row">
+<div class="col-lg-5">
+<div class="kicker">Get in Touch</div>
+<h2>Tell us where you are and where you want to go.</h2>
+<p>Every restaurant starts from a different place. Understanding your goals and challenges helps us determine what kind of consulting support may be useful.</p>
+<div class="check">New restaurant planning</div>
+<div class="check">Operational improvements</div>
+<div class="check">Menu pricing and profitability</div>
+<div class="check">Marketing and local SEO</div>
+<div class="check">Growth and expansion</div>
+<div class="notice">This form is currently a preview. Submissions are not enabled yet.</div>
+</div>
+<div class="col-lg-7">
+<div class="form-box">
+<h3>Restaurant Consulting Inquiry</h3>
+<p>Share some details about your business.</p>
+<form id="contactForm">
+<div class="row">
+<div class="col-md-6">
+<label class="form-label" for="name">Your Name</label>
+<input class="form-control" id="name" name="name" required autocomplete="name">
+</div>
+<div class="col-md-6">
+<label class="form-label" for="email">Email Address</label>
+<input class="form-control" id="email" type="email" name="email" required autocomplete="email">
+</div>
+<div class="col-md-6">
+<label class="form-label" for="phone">Phone Number</label>
+<input class="form-control" id="phone" type="tel" name="phone" required autocomplete="tel">
+</div>
+<div class="col-md-6">
+<label class="form-label" for="business">Business Name</label>
+<input class="form-control" id="business" name="business_name">
+</div>
+<div class="col-md-6">
+<label class="form-label" for="type">Business Type</label>
+<select class="form-select" id="type" name="business_type" required>
+<option value="">Choose business type</option>
+<option>Coffee Shop</option>
+<option>Café</option>
+<option>Bakery</option>
+<option>Quick-Service Restaurant</option>
+<option>Other</option>
+</select>
+</div>
+<div class="col-md-6">
+<label class="form-label" for="stage">Business Stage</label>
+<select class="form-select" id="stage" name="business_stage" required>
+<option value="">Choose business stage</option>
+<option>Exploring an Idea</option>
+<option>Planning to Open</option>
+<option>Opening Soon</option>
+<option>Already Operating</option>
+<option>Looking to Expand</option>
+</select>
+</div>
+<div>
+<label class="form-label" for="challenge">Biggest Challenge or Goal</label>
+<textarea class="form-control" id="challenge" name="biggest_challenge" rows="5" required placeholder="Tell us about your restaurant or idea..."></textarea>
+</div>
+<div>
+<label class="form-label" for="timeline">When Are You Looking for Help?</label>
+<select class="form-select" id="timeline" name="timeline">
+<option value="">Select a timeframe</option>
+<option>As Soon As Possible</option>
+<option>Within 30 Days</option>
+<option>Within 3 Months</option>
+<option>Just Researching</option>
+</select>
+</div>
+<div>
+<label class="small"><input type="checkbox" name="updates"> I'd like optional restaurant business updates when available.</label>
+</div>
+<div>
+<button class="btn btn-proof w-100" type="submit">Send Consulting Inquiry</button>
+<p id="formMessage" class="small" role="status" style="margin-top:15px">This demo form is not accepting submissions.</p>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="booking" class="bg-soft">
+<div class="container">
+<div class="row align-center">
+<div class="col-lg-7">
+<div class="kicker">Schedule a Conversation</div>
+<h2>Book a Call With Proof.</h2>
+<p>Interested in talking through your restaurant concept or operational challenges?</p>
+<p>Our scheduling calendar will appear here when booking is enabled. We'll use the introductory conversation to understand your goals and discuss possible next steps.</p>
+<div class="notice">Online appointment scheduling is coming soon.</div>
+</div>
+<div class="col-lg-5">
+<div class="card text-center">
+<h3>Introductory Consultation</h3>
+<p>Discuss your business, priorities and the kind of support you may need.</p>
+<button class="btn btn-proof w-100" disabled>Scheduling Coming Soon</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="cta">
+<h2>Not ready to book yet?</h2>
+<p>Explore our approach and learn more about our practical restaurant consulting philosophy.</p>
+<a href="about.html" class="btn btn-proof">Learn About Proof</a>
+<a href="index.html#playbook" class="btn btn-outline">Free Playbook</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<div class="footer-inner">
+<div><a class="navbar-brand" href="index.html">proof<span class="logo-dot">.</span></a><p>Restaurant consulting from real operators.</p></div>
+<div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></div>
+</div>
+<hr>
+<p class="small">&copy; <span class="year"></span> Proof. All rights reserved.</p>
+</div>
+</footer>
+
+<script>
+document.querySelector(".nav-toggle").addEventListener("click",function(){
+const open=document.getElementById("nav").classList.toggle("open");
+this.setAttribute("aria-expanded",String(open));
+});
+document.querySelectorAll(".year").forEach(e=>e.textContent=new Date().getFullYear());
+document.getElementById("contactForm").addEventListener("submit",function(e){
+e.preventDefault();
+document.getElementById("formMessage").textContent="Submissions are not active yet. No information has been sent or saved.";
+});
+</script>
+</body>
+</html>

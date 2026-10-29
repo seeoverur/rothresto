@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Proof | Restaurant Consulting</title>
+<meta name="description" content="Learn about Proof, restaurant consulting led by people who actually own and operate restaurants.">
+<style>
+:root{--dark:#152b24;--green:#345d49;--lime:#dbed9c;--cream:#f8f8f3;--soft:#edf2e8;--muted:#59695f;--border:#dce4d8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{margin:0;background:var(--cream);color:var(--dark);font-family:Arial,Helvetica,sans-serif;line-height:1.7}
+a{text-decoration:none;color:inherit}
+h1,h2,h3{font-weight:800;line-height:1.17;margin:0 0 20px}
+h1{font-size:clamp(2.6rem,5vw,4.6rem)}
+h2{font-size:clamp(2rem,3vw,3rem)}
+h3{font-size:21px}
+p{color:var(--muted);margin:0 0 18px}
+.container{max-width:1140px;margin:auto;padding:0 20px}
+.row{display:flex;flex-wrap:wrap;margin:0 -12px;row-gap:24px}
+.row>*{width:100%;padding:0 12px}
+@media(min-width:768px){.col-md-4{width:33.333%}.col-md-6{width:50%}}
+@media(min-width:992px){.col-lg-5{width:41.666%}.col-lg-6{width:50%}.col-lg-7{width:58.333%}}
+section{padding:80px 0}
+.kicker{font-size:12px;letter-spacing:2px;font-weight:800;text-transform:uppercase;color:var(--green);margin-bottom:13px}
+.bg-soft{background:var(--soft)}
+.bg-dark{background:var(--dark);color:white}
+.bg-dark p{color:#d1dfd4}
+.btn{display:inline-block;border:2px solid transparent;border-radius:8px;padding:12px 22px;font-size:15px;font-weight:700;text-align:center;cursor:pointer}
+.btn-proof,.btn-proof:visited{background:var(--dark);border-color:var(--dark);color:white!important}
+.btn-proof:hover,.btn-proof:focus{background:var(--green);border-color:var(--green);color:white!important}
+.navbar{background:var(--cream);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.nav-inner{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.navbar-brand{font-weight:900;font-size:30px;letter-spacing:-1px}
+.logo-dot{color:#8cae60}
+.nav-links{display:flex;align-items:center;gap:24px}
+.nav-links a:not(.btn){font-size:14px;font-weight:700}
+.nav-links .btn{font-size:14px;padding:9px 18px}
+.nav-toggle{display:none;background:none;border:1px solid var(--green);border-radius:7px;font-size:25px;padding:3px 12px;color:var(--dark);cursor:pointer}
+.page-hero{background:var(--soft);padding:90px 0 75px}
+.page-hero p{max-width:760px;font-size:19px}
+.card{height:100%;background:white;border:1px solid var(--border);border-radius:15px;padding:30px}
+.num{display:inline-flex;width:48px;height:48px;align-items:center;justify-content:center;background:var(--soft);border-radius:9px;font-weight:900;margin-bottom:20px}
+.hero-panel{background:linear-gradient(135deg,#152b24,#416a52);border-radius:20px;padding:44px;min-height:340px;display:flex;flex-direction:column;justify-content:center}
+.hero-panel h2{color:white}
+.hero-panel p{color:#d7e5d9}
+.check{padding:11px 0;border-bottom:1px solid var(--border)}
+.check:before{content:"✓";font-weight:900;color:var(--green);margin-right:12px}
+.dark-card{background:#2b4939;border-radius:14px;padding:30px;height:100%}
+.dark-card h3{color:white}
+.dark-card p{color:#d2dfd4}
+.cta{background:var(--lime);border-radius:18px;padding:55px;text-align:center}
+.cta p{color:var(--green)}
+.align-center{align-items:center}
+.section-heading{max-width:760px;margin-bottom:42px}
+footer{background:#10231b;padding:45px 0 25px;color:white}
+footer p,footer a:not(.navbar-brand){color:#bdcbbd}
+.footer-inner{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.footer-links{display:flex;gap:18px;flex-wrap:wrap}
+footer hr{border:0;border-top:1px solid #48604f;margin:30px 0 15px}
+.small{font-size:13px}
+@media(max-width:767px){
+section{padding:60px 0}
+.page-hero{padding:65px 0}
+.nav-inner{flex-wrap:wrap}
+.nav-toggle{display:block}
+.nav-links{display:none;flex-direction:column;align-items:stretch;width:100%;gap:0;padding-bottom:15px}
+.nav-links.open{display:flex}
+.nav-links a{padding:10px 0}
+.nav-links .btn{margin-top:8px}
+.hero-panel{padding:30px}
+.cta{padding:32px 22px}
+}
+</style>
+</head>
+<body>
+
+<header class="navbar">
+<div class="container nav-inner">
+<a class="navbar-brand" href="index.html">proof<span class="logo-dot">.</span></a>
+<button class="nav-toggle" aria-label="Toggle navigation" aria-controls="nav" aria-expanded="false">☰</button>
+<nav class="nav-links" id="nav">
+<a href="index.html">Home</a>
+<a href="index.html#services">Services</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a class="btn btn-proof" href="contact.html#booking">Book a Call</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="page-hero">
+<div class="container">
+<div class="kicker">About Proof</div>
+<h1>Restaurant advice from people who actually operate restaurants.</h1>
+<p>Independent restaurant owners deserve practical guidance from people who understand the business firsthand.</p>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="row align-center">
+<div class="col-lg-7">
+<div class="kicker">Our Story</div>
+<h2>Experience makes the difference.</h2>
+<p>Opening and running a restaurant takes more than having a good concept or a great menu. It requires hundreds of decisions about costs, people, equipment, pricing, service and daily execution.</p>
+<p>At Proof, our perspective comes from actively owning and operating restaurants. We understand that small decisions can have a significant impact on profitability and that most independent operators don't have unlimited time or money.</p>
+<p>Proof exists to help coffee shops, cafés and quick-service restaurants navigate these decisions with more confidence and less waste.</p>
+</div>
+<div class="col-lg-5">
+<div class="hero-panel">
+<div class="kicker" style="color:var(--lime)">Our Philosophy</div>
+<h2>Spend smarter. Build better. Keep improving.</h2>
+<p>A strong restaurant starts with thoughtful decisions, efficient systems and a realistic understanding of its numbers.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bg-soft">
+<div class="container">
+<div class="section-heading">
+<div class="kicker">What We Stand For</div>
+<h2>Practical business advice. No unnecessary complexity.</h2>
+</div>
+<div class="row">
+<div class="col-md-4"><div class="card"><div class="num">01</div><h3>Real-World Thinking</h3><p>Our recommendations reflect the everyday challenges of running restaurants, not just theoretical business models.</p></div></div>
+<div class="col-md-4"><div class="card"><div class="num">02</div><h3>Respect for Your Budget</h3><p>We look for practical solutions that make financial sense for independent operators with limited resources.</p></div></div>
+<div class="col-md-4"><div class="card"><div class="num">03</div><h3>Long-Term Improvement</h3><p>We focus on systems and strategies that can continue delivering value as your business grows.</p></div></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="row align-center">
+<div class="col-lg-6">
+<div class="kicker">Our Experience</div>
+<h2>We know what it's like behind the counter.</h2>
+<p>From equipment decisions and menu development to staffing, customer service, cost control and local marketing, we understand how the parts of a restaurant business work together.</p>
+<p>Our goal is to help entrepreneurs start their first location, improve existing operations and create opportunities for sustainable growth.</p>
+<a href="contact.html" class="btn btn-proof">Work With Proof</a>
+</div>
+<div class="col-lg-6">
+<div class="card">
+<h3>Where We Can Help</h3>
+<div class="check">Coffee shop and café concepts</div>
+<div class="check">Restaurant startup planning</div>
+<div class="check">Equipment and buildout budgets</div>
+<div class="check">Menu pricing and cost control</div>
+<div class="check">Staffing and daily operations</div>
+<div class="check">Google Maps and local SEO</div>
+<div class="check">Marketing and customer acquisition</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bg-dark">
+<div class="container">
+<div class="section-heading">
+<div class="kicker" style="color:var(--lime)">Real Experience</div>
+<h2>The businesses behind our advice.</h2>
+<p>Our story is rooted in active restaurant ownership. This space can showcase the restaurants we operate, our daily responsibilities and improvements we've made.</p>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="dark-card">
+<h3>Our Restaurant Operations</h3>
+<p>Add actual restaurant names, locations, photographs and a brief description of your ownership and operating experience.</p>
+</div>
+</div>
+<div class="col-md-6">
+<div class="dark-card">
+<h3>Lessons From the Business</h3>
+<p>Add an authentic example of a challenge you solved, an operational improvement or a cost-conscious decision.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="cta">
+<h2>Let's put real experience to work for your restaurant.</h2>
+<p>Tell us about your goals, challenges and the kind of support you're looking for.</p>
+<a href="contact.html#booking" class="btn btn-proof">Book a Call</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<div class="footer-inner">
+<div><a href="index.html" class="navbar-brand">proof<span class="logo-dot">.</span></a><p>Restaurant consulting from real operators.</p></div>
+<div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></div>
+</div>
+<hr>
+<p class="small">&copy; <span class="year"></span> Proof. All rights reserved.</p>
+</div>
+</footer>
+
+<script>
+document.querySelector(".nav-toggle").addEventListener("click",function(){
+const open=document.getElementById("nav").classList.toggle("open");
+this.setAttribute("aria-expanded",String(open));
+});
+document.querySelectorAll(".year").forEach(e=>e.textContent=new Date().getFullYear());
+</script>
+</body>
+</html>
