@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,6 +36,8 @@ button:disabled{opacity:.65;cursor:not-allowed}
 .logo-dot{color:#8cae60}
 .nav-links{display:flex;align-items:center;gap:24px}
 .nav-links a:not(.btn){font-size:14px;font-weight:700}
+.nav-links a:not(.btn):hover{color:var(--green)}
+.nav-links .nav-phone{color:var(--green)}
 .nav-links .btn{font-size:14px;padding:9px 18px}
 .nav-toggle{display:none;background:none;border:1px solid var(--green);border-radius:7px;font-size:25px;padding:3px 12px;color:var(--dark);cursor:pointer}
 .page-hero{background:var(--soft);padding:90px 0 75px}
@@ -49,14 +50,24 @@ textarea.form-control{resize:vertical}
 .check{padding:11px 0;border-bottom:1px solid var(--border)}
 .check:before{content:"✓";font-weight:900;color:var(--green);margin-right:12px}
 .notice{padding:16px 20px;border-radius:8px;background:var(--soft);font-size:14px;color:var(--green);margin-top:24px}
+.phone-box{background:white;border:1px solid var(--border);border-radius:12px;padding:20px 22px;margin-top:24px}
+.phone-box .small{display:block;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--green);margin-bottom:4px}
+.phone-big{font-size:26px;font-weight:900;color:var(--dark)}
+.phone-big:hover{color:var(--green)}
+.phone-link{font-weight:700;color:var(--dark);border-bottom:1px solid currentColor}
+.phone-link:hover{color:var(--green)}
 .cta{background:var(--lime);border-radius:18px;padding:55px;text-align:center}
 .cta p{color:var(--green)}
+.cta-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 .align-center{align-items:center}
 .w-100{width:100%}
 .small{font-size:13px}
 .text-center{text-align:center}
+.mt-3{margin-top:12px}
+.mb-0{margin-bottom:0}
 footer{background:#10231b;padding:45px 0 25px;color:white}
 footer p,footer a:not(.navbar-brand){color:#bdcbbd}
+footer a:not(.navbar-brand):hover{color:#fff}
 .footer-inner{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
 .footer-links{display:flex;gap:18px;flex-wrap:wrap}
 footer hr{border:0;border-top:1px solid #48604f;margin:30px 0 15px}
@@ -71,6 +82,8 @@ section{padding:60px 0}
 .nav-links .btn{margin-top:8px}
 .form-box,.card{padding:24px}
 .cta{padding:32px 22px}
+.cta-actions{flex-direction:column}
+.cta-actions .btn{width:100%}
 }
 </style>
 </head>
@@ -85,6 +98,7 @@ section{padding:60px 0}
 <a href="index.html#services">Services</a>
 <a href="about.html">About</a>
 <a href="contact.html">Contact</a>
+<a class="nav-phone" href="tel:+18433270347">(843) 327-0347</a>
 <a class="btn btn-proof" href="#booking">Book a Call</a>
 </nav>
 </div>
@@ -95,7 +109,7 @@ section{padding:60px 0}
 <div class="container">
 <div class="kicker">Contact Proof</div>
 <h1>Let's talk about your restaurant.</h1>
-<p>Whether you're planning your first coffee shop, working to improve an existing location or preparing for growth, we'd like to hear what you're working on.</p>
+<p>Whether you're planning your first coffee shop, working to improve an existing location or preparing for growth, we'd like to hear what you're working on. Call <a class="phone-link" href="tel:+18433270347">(843) 327-0347</a> or send the inquiry below.</p>
 </div>
 </section>
 
@@ -111,7 +125,11 @@ section{padding:60px 0}
 <div class="check">Menu pricing and profitability</div>
 <div class="check">Marketing and local SEO</div>
 <div class="check">Growth and expansion</div>
-<div class="notice">This form is currently a preview. Submissions are not enabled yet.</div>
+<div class="phone-box">
+<span class="small">Call Proof Directly</span>
+<a class="phone-big" href="tel:+18433270347">(843) 327-0347</a>
+</div>
+<div class="notice">This form is currently a preview. Submissions are not enabled yet. Please call <a class="phone-link" href="tel:+18433270347">(843) 327-0347</a> in the meantime.</div>
 </div>
 <div class="col-lg-7">
 <div class="form-box">
@@ -176,7 +194,7 @@ section{padding:60px 0}
 </div>
 <div>
 <button class="btn btn-proof w-100" type="submit">Send Consulting Inquiry</button>
-<p id="formMessage" class="small" role="status" style="margin-top:15px">This demo form is not accepting submissions.</p>
+<p id="formMessage" class="small" role="status" style="margin-top:15px">This demo form is not accepting submissions. Call <a class="phone-link" href="tel:+18433270347">(843) 327-0347</a> instead.</p>
 </div>
 </div>
 </form>
@@ -194,13 +212,14 @@ section{padding:60px 0}
 <h2>Book a Call With Proof.</h2>
 <p>Interested in talking through your restaurant concept or operational challenges?</p>
 <p>Our scheduling calendar will appear here when booking is enabled. We'll use the introductory conversation to understand your goals and discuss possible next steps.</p>
-<div class="notice">Online appointment scheduling is coming soon.</div>
+<div class="notice">Online appointment scheduling is coming soon. To set up a call now, phone <a class="phone-link" href="tel:+18433270347">(843) 327-0347</a>.</div>
 </div>
 <div class="col-lg-5">
 <div class="card text-center">
 <h3>Introductory Consultation</h3>
 <p>Discuss your business, priorities and the kind of support you may need.</p>
-<button class="btn btn-proof w-100" disabled>Scheduling Coming Soon</button>
+<a class="btn btn-proof w-100" href="tel:+18433270347">Call (843) 327-0347</a>
+<button class="btn btn-outline w-100 mt-3" disabled>Online Scheduling Coming Soon</button>
 </div>
 </div>
 </div>
@@ -211,9 +230,11 @@ section{padding:60px 0}
 <div class="container">
 <div class="cta">
 <h2>Not ready to book yet?</h2>
-<p>Explore our approach and learn more about our practical restaurant consulting philosophy.</p>
+<p>Explore our approach and learn more about our practical restaurant consulting philosophy, or call <a class="phone-link" href="tel:+18433270347">(843) 327-0347</a> with a quick question.</p>
+<div class="cta-actions">
 <a href="about.html" class="btn btn-proof">Learn About Proof</a>
 <a href="index.html#playbook" class="btn btn-outline">Free Playbook</a>
+</div>
 </div>
 </div>
 </section>
@@ -222,7 +243,7 @@ section{padding:60px 0}
 <footer>
 <div class="container">
 <div class="footer-inner">
-<div><a class="navbar-brand" href="index.html">proof<span class="logo-dot">.</span></a><p>Restaurant consulting from real operators.</p></div>
+<div><a class="navbar-brand" href="index.html">proof<span class="logo-dot">.</span></a><p>Restaurant consulting from real operators.</p><p class="mb-0"><a href="tel:+18433270347">(843) 327-0347</a></p></div>
 <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></div>
 </div>
 <hr>
@@ -238,7 +259,8 @@ this.setAttribute("aria-expanded",String(open));
 document.querySelectorAll(".year").forEach(e=>e.textContent=new Date().getFullYear());
 document.getElementById("contactForm").addEventListener("submit",function(e){
 e.preventDefault();
-document.getElementById("formMessage").textContent="Submissions are not active yet. No information has been sent or saved.";
+const msg=document.getElementById("formMessage");
+msg.innerHTML='Submissions are not active yet. No information has been sent or saved. Please call <a class="phone-link" href="tel:+18433270347">(843) 327-0347</a>.';
 });
 </script>
 </body>
